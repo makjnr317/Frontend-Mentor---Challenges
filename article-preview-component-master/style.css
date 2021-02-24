@@ -1,0 +1,66 @@
+:root{
+--DarkGrayishBlue: hsl(217, 19%, 35%);
+--DarkBlue: hsl(214, 17%, 51%);
+--GrayishBlue: hsl(212, 23%, 69%);
+--LightGrayishBlue: hsl(210, 46%, 95%)
+}
+
+*{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body,html{
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+body{
+    background-color: var(--LightGrayishBlue);
+    padding: 0 20px;
+}
+
+.article-card{
+    max-width: 800px;
+    width: 100%;
+    height: 250px;
+    background-color: white;
+    display: grid;
+    border-radius: 8px;
+    box-shadow: 0 0 20px 0px #cecece;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.image{
+    grid-row: 1/ span 4;
+    grid-column: 1/ span 3;
+    background: url(images/drawers.jpg) center/cover no-repeat;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.text{
+    grid-row: 1/ span 3;
+    grid-column: 4/ span 6;
+}
+
+.card-footer{
+    grid-row: 4/ span 1;
+    grid-column: 4/ span 6;
+}
+
+.text, .card-footer{
+    padding: 25px;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+}
+.attribution a { color: hsl(228, 45%, 44%); }

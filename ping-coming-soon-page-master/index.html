@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+	<title>Frontend Mentor | Ping coming soon page</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/331bee8303.js" crossorigin="anonymous"></script>
+	<script src="script.js"></script>
+</head>
+<body>
+	<header>
+		<img src="images/logo.svg" class="logo">
+		<h1><span>We are launching</span> soon!</h1>
+		<a>Subscribe and get notified</a>
+	</header>
+
+	<form>
+		<input type="email" placeholder="Your email address..." name="email">
+		<span class="error"></span>
+		<input type="submit" value="Notify Me" onclick="validate()">
+	</form>
+
+	<img src="images/illustration-dashboard.png" class="main-img">
+
+	<footer>
+		<div class="footer-main">
+			<div class="icons">
+				<i class="fab fa-facebook-square"></i>
+				<i class="fab fa-twitter"></i>
+				<i class="fab fa-instagram"></i>
+			</div>	
+			<sapn class="copy">&copy; Copyright Ping. All rights reserved.</sapn>
+		</div>	
+		<p class="attribution">
+			Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+			Coded by <a href="#">Mazano Kuhudzai</a>.
+		</p>
+	</footer>	
+</body>
+</html>

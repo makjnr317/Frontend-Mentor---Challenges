@@ -1,0 +1,86 @@
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+:root{
+    --cyan: hsl(185, 75%, 39%);
+    --darkblue: hsl(229, 23%, 23%);
+    --blue: hsl(227, 10%, 46%);
+    --gray: hsl(0, 0%, 59%)
+}
+body,html{
+    height: 100%;
+    margin: 0;
+}
+body{
+    background: url(images/bg-pattern-top.svg) no-repeat;
+    background-position: -150px -350px;
+    background-color: var(--cyan);
+    background-size: 800px;
+    background-blend-mode: unset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    background: white;
+    width: 300px;
+    height: 330px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-cover-image{
+    height: 120px;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background: url(images/bg-pattern-card.svg);
+}
+
+.card-profile-pic{
+    height: 110px;
+    width:100px;
+    background: url(images/image-victor.jpg) center/cover no-repeat;
+    border-radius: 50%;
+    border: 5px solid white;
+    position: relative;
+    top: -50px;
+}
+
+.attribution{
+    position: absolute;
+    bottom: 0;
+}
+
+.profile-stats{
+    border-top: solid 1px hsl(0deg 0% 84%);
+    position: relative;
+    width: 100%;
+    height: 73px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    text-align: center;
+    align-items: center;
+}
+
+.user-profile{
+    text-align: center;
+    position: relative;
+    top: -36px;
+}
+
+.gray-text{
+    color: var(--gray)
+}
+
+.attribution { 
+    font-size: 11px;
+    text-align: center; 
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
